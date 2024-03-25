@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302414F02815E4480030CB80 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302414EF2815E4480030CB80 /* DeviceManager.swift */; };
+		302414F42815E5540030CB80 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302414F32815E5540030CB80 /* Device.swift */; };
+		302414F62816009B0030CB80 /* Device+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302414F52816009B0030CB80 /* Device+CoreData.swift */; };
+		30241503281609900030CB80 /* DevicesEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30241501281609900030CB80 /* DevicesEntity+CoreDataClass.swift */; };
+		30241504281609900030CB80 /* DevicesEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30241502281609900030CB80 /* DevicesEntity+CoreDataProperties.swift */; };
+		30241507281644E30030CB80 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 30241506281644E30030CB80 /* SWXMLHash */; };
+		305B550227E4469500B07162 /* ApiRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B550127E4469500B07162 /* ApiRoutes.swift */; };
+		30C5A87127DD4BE900DB308A /* Roku_RemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A87027DD4BE900DB308A /* Roku_RemoteApp.swift */; };
+		30C5A87327DD4BE900DB308A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A87227DD4BE900DB308A /* ContentView.swift */; };
+		30C5A87527DD4BEA00DB308A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C5A87427DD4BEA00DB308A /* Assets.xcassets */; };
+		30C5A87827DD4BEA00DB308A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C5A87727DD4BEA00DB308A /* Preview Assets.xcassets */; };
+		30C5A87A27DD4BEA00DB308A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A87927DD4BEA00DB308A /* Persistence.swift */; };
+		30C5A87D27DD4BEA00DB308A /* Roku_Remote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A87B27DD4BEA00DB308A /* Roku_Remote.xcdatamodeld */; };
+		30C5A88727DD4BEA00DB308A /* Roku_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A88627DD4BEA00DB308A /* Roku_RemoteTests.swift */; };
+		30C5A89127DD4BEB00DB308A /* Roku_RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A89027DD4BEB00DB308A /* Roku_RemoteUITests.swift */; };
+		30C5A89327DD4BEB00DB308A /* Roku_RemoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A89227DD4BEB00DB308A /* Roku_RemoteUITestsLaunchTests.swift */; };
+		30C5A8A527DD8C0000DB308A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A8A427DD8BFF00DB308A /* HomeView.swift */; };
+		30C5A8A727DD8C1F00DB308A /* RokuChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A8A627DD8C1F00DB308A /* RokuChannelView.swift */; };
+		30C5A8A927DD8C3200DB308A /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A8A827DD8C3200DB308A /* RemoteView.swift */; };
+		30C5A8AB27DD8C4800DB308A /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A8AA27DD8C4800DB308A /* DevicesView.swift */; };
+		30C5A8AF27DD993200DB308A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C5A8AE27DD993200DB308A /* LaunchScreen.storyboard */; };
+		30C5A95D27E0475600DB308A /* MMLANScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A94327E0475500DB308A /* MMLANScanner.m */; };
+		30C5A95E27E0475600DB308A /* MACOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A94827E0475500DB308A /* MACOperation.m */; };
+		30C5A95F27E0475600DB308A /* NetworkCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A94927E0475500DB308A /* NetworkCalculator.m */; };
+		30C5A96027E0475600DB308A /* LANProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A94B27E0475500DB308A /* LANProperties.m */; };
+		30C5A96127E0475600DB308A /* PingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A94C27E0475500DB308A /* PingOperation.m */; };
+		30C5A96227E0475600DB308A /* MacFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A94F27E0475500DB308A /* MacFinder.m */; };
+		30C5A96327E0475600DB308A /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A95727E0475500DB308A /* SimplePing.m */; };
+		30C5A96427E0475600DB308A /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A95927E0475500DB308A /* MMDevice.m */; };
+		30C5A96527E0475600DB308A /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30C5A95C27E0475500DB308A /* data.plist */; };
+		30C5A96827E049D200DB308A /* LanScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A96727E049D200DB308A /* LanScanner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30C5A88327DD4BEA00DB308A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30C5A86527DD4BE900DB308A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30C5A86C27DD4BE900DB308A;
+			remoteInfo = "Roku Remote";
+		};
+		30C5A88D27DD4BEB00DB308A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30C5A86527DD4BE900DB308A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30C5A86C27DD4BE900DB308A;
+			remoteInfo = "Roku Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		302414EF2815E4480030CB80 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		302414F32815E5540030CB80 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		302414F52816009B0030CB80 /* Device+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreData.swift"; sourceTree = "<group>"; };
+		30241501281609900030CB80 /* DevicesEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		30241502281609900030CB80 /* DevicesEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DevicesEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		305B550127E4469500B07162 /* ApiRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRoutes.swift; sourceTree = "<group>"; };
+		305B550327EA6AC400B07162 /* Roku-Remote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Roku-Remote-Info.plist"; sourceTree = SOURCE_ROOT; };
+		30C5A86D27DD4BE900DB308A /* Roku Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roku Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C5A87027DD4BE900DB308A /* Roku_RemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roku_RemoteApp.swift; sourceTree = "<group>"; };
+		30C5A87227DD4BE900DB308A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30C5A87427DD4BEA00DB308A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30C5A87727DD4BEA00DB308A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30C5A87927DD4BEA00DB308A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		30C5A87C27DD4BEA00DB308A /* Roku_Remote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roku_Remote.xcdatamodel; sourceTree = "<group>"; };
+		30C5A88227DD4BEA00DB308A /* Roku RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roku RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C5A88627DD4BEA00DB308A /* Roku_RemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roku_RemoteTests.swift; sourceTree = "<group>"; };
+		30C5A88C27DD4BEB00DB308A /* Roku RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roku RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C5A89027DD4BEB00DB308A /* Roku_RemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roku_RemoteUITests.swift; sourceTree = "<group>"; };
+		30C5A89227DD4BEB00DB308A /* Roku_RemoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roku_RemoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30C5A8A427DD8BFF00DB308A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		30C5A8A627DD8C1F00DB308A /* RokuChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokuChannelView.swift; sourceTree = "<group>"; };
+		30C5A8A827DD8C3200DB308A /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
+		30C5A8AA27DD8C4800DB308A /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		30C5A8AE27DD993200DB308A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30C5A94327E0475500DB308A /* MMLANScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLANScanner.m; sourceTree = "<group>"; };
+		30C5A94427E0475500DB308A /* NetworkCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCalculator.h; sourceTree = "<group>"; };
+		30C5A94527E0475500DB308A /* MACOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACOperation.h; sourceTree = "<group>"; };
+		30C5A94627E0475500DB308A /* LANProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANProperties.h; sourceTree = "<group>"; };
+		30C5A94727E0475500DB308A /* PingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingOperation.h; sourceTree = "<group>"; };
+		30C5A94827E0475500DB308A /* MACOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACOperation.m; sourceTree = "<group>"; };
+		30C5A94927E0475500DB308A /* NetworkCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCalculator.m; sourceTree = "<group>"; };
+		30C5A94A27E0475500DB308A /* MMLANScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLANScanner.h; sourceTree = "<group>"; };
+		30C5A94B27E0475500DB308A /* LANProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANProperties.m; sourceTree = "<group>"; };
+		30C5A94C27E0475500DB308A /* PingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingOperation.m; sourceTree = "<group>"; };
+		30C5A94F27E0475500DB308A /* MacFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacFinder.m; sourceTree = "<group>"; };
+		30C5A95127E0475500DB308A /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		30C5A95227E0475500DB308A /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		30C5A95327E0475500DB308A /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		30C5A95427E0475500DB308A /* MacFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacFinder.h; sourceTree = "<group>"; };
+		30C5A95627E0475500DB308A /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		30C5A95727E0475500DB308A /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		30C5A95927E0475500DB308A /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		30C5A95A27E0475500DB308A /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
+		30C5A95C27E0475500DB308A /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		30C5A96627E048B700DB308A /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
+		30C5A96727E049D200DB308A /* LanScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScanner.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C5A86A27DD4BE900DB308A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30241507281644E30030CB80 /* SWXMLHash in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C5A87F27DD4BEA00DB308A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C5A88927DD4BEA00DB308A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		302414EE2815E40D0030CB80 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				30241501281609900030CB80 /* DevicesEntity+CoreDataClass.swift */,
+				30241502281609900030CB80 /* DevicesEntity+CoreDataProperties.swift */,
+				302414EF2815E4480030CB80 /* DeviceManager.swift */,
+				302414F52816009B0030CB80 /* Device+CoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		302414F22815E5330030CB80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				302414EE2815E40D0030CB80 /* CoreData */,
+				302414F32815E5540030CB80 /* Device.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30C5A86427DD4BE900DB308A = {
+			isa = PBXGroup;
+			children = (
+				30C5A86F27DD4BE900DB308A /* Roku Remote */,
+				30C5A88527DD4BEA00DB308A /* Roku RemoteTests */,
+				30C5A88F27DD4BEB00DB308A /* Roku RemoteUITests */,
+				30C5A86E27DD4BE900DB308A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C5A86E27DD4BE900DB308A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A86D27DD4BE900DB308A /* Roku Remote.app */,
+				30C5A88227DD4BEA00DB308A /* Roku RemoteTests.xctest */,
+				30C5A88C27DD4BEB00DB308A /* Roku RemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C5A86F27DD4BE900DB308A /* Roku Remote */ = {
+			isa = PBXGroup;
+			children = (
+				302414F22815E5330030CB80 /* Models */,
+				305B550327EA6AC400B07162 /* Roku-Remote-Info.plist */,
+				30C5A94127E0475500DB308A /* MMLanScan */,
+				30C5A8A327DD8BC900DB308A /* Views */,
+				30C5A87027DD4BE900DB308A /* Roku_RemoteApp.swift */,
+				30C5A87227DD4BE900DB308A /* ContentView.swift */,
+				30C5A87427DD4BEA00DB308A /* Assets.xcassets */,
+				30C5A87927DD4BEA00DB308A /* Persistence.swift */,
+				30C5A87B27DD4BEA00DB308A /* Roku_Remote.xcdatamodeld */,
+				30C5A87627DD4BEA00DB308A /* Preview Content */,
+				30C5A8AE27DD993200DB308A /* LaunchScreen.storyboard */,
+				30C5A96627E048B700DB308A /* MMLanScan-Bridging-Header.h */,
+				30C5A96727E049D200DB308A /* LanScanner.swift */,
+				305B550127E4469500B07162 /* ApiRoutes.swift */,
+			);
+			path = "Roku Remote";
+			sourceTree = "<group>";
+		};
+		30C5A87627DD4BEA00DB308A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A87727DD4BEA00DB308A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30C5A88527DD4BEA00DB308A /* Roku RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A88627DD4BEA00DB308A /* Roku_RemoteTests.swift */,
+			);
+			path = "Roku RemoteTests";
+			sourceTree = "<group>";
+		};
+		30C5A88F27DD4BEB00DB308A /* Roku RemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A89027DD4BEB00DB308A /* Roku_RemoteUITests.swift */,
+				30C5A89227DD4BEB00DB308A /* Roku_RemoteUITestsLaunchTests.swift */,
+			);
+			path = "Roku RemoteUITests";
+			sourceTree = "<group>";
+		};
+		30C5A8A327DD8BC900DB308A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A8A427DD8BFF00DB308A /* HomeView.swift */,
+				30C5A8A627DD8C1F00DB308A /* RokuChannelView.swift */,
+				30C5A8A827DD8C3200DB308A /* RemoteView.swift */,
+				30C5A8AA27DD8C4800DB308A /* DevicesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30C5A94127E0475500DB308A /* MMLanScan */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A94227E0475500DB308A /* Misc */,
+				30C5A94D27E0475500DB308A /* External Libs */,
+				30C5A95827E0475500DB308A /* Objects */,
+				30C5A95B27E0475500DB308A /* Data */,
+			);
+			path = MMLanScan;
+			sourceTree = "<group>";
+		};
+		30C5A94227E0475500DB308A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A94327E0475500DB308A /* MMLANScanner.m */,
+				30C5A94427E0475500DB308A /* NetworkCalculator.h */,
+				30C5A94527E0475500DB308A /* MACOperation.h */,
+				30C5A94627E0475500DB308A /* LANProperties.h */,
+				30C5A94727E0475500DB308A /* PingOperation.h */,
+				30C5A94827E0475500DB308A /* MACOperation.m */,
+				30C5A94927E0475500DB308A /* NetworkCalculator.m */,
+				30C5A94A27E0475500DB308A /* MMLANScanner.h */,
+				30C5A94B27E0475500DB308A /* LANProperties.m */,
+				30C5A94C27E0475500DB308A /* PingOperation.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		30C5A94D27E0475500DB308A /* External Libs */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A94E27E0475500DB308A /* MacFinder */,
+				30C5A95527E0475500DB308A /* SimplePing */,
+			);
+			path = "External Libs";
+			sourceTree = "<group>";
+		};
+		30C5A94E27E0475500DB308A /* MacFinder */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A94F27E0475500DB308A /* MacFinder.m */,
+				30C5A95027E0475500DB308A /* Network Headers */,
+				30C5A95427E0475500DB308A /* MacFinder.h */,
+			);
+			path = MacFinder;
+			sourceTree = "<group>";
+		};
+		30C5A95027E0475500DB308A /* Network Headers */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A95127E0475500DB308A /* route.h */,
+				30C5A95227E0475500DB308A /* if_ether.h */,
+				30C5A95327E0475500DB308A /* if_arp.h */,
+			);
+			path = "Network Headers";
+			sourceTree = "<group>";
+		};
+		30C5A95527E0475500DB308A /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A95627E0475500DB308A /* SimplePing.h */,
+				30C5A95727E0475500DB308A /* SimplePing.m */,
+			);
+			path = SimplePing;
+			sourceTree = "<group>";
+		};
+		30C5A95827E0475500DB308A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A95927E0475500DB308A /* MMDevice.m */,
+				30C5A95A27E0475500DB308A /* MMDevice.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		30C5A95B27E0475500DB308A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				30C5A95C27E0475500DB308A /* data.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C5A86C27DD4BE900DB308A /* Roku Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C5A89627DD4BEB00DB308A /* Build configuration list for PBXNativeTarget "Roku Remote" */;
+			buildPhases = (
+				30C5A86927DD4BE900DB308A /* Sources */,
+				30C5A86A27DD4BE900DB308A /* Frameworks */,
+				30C5A86B27DD4BE900DB308A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roku Remote";
+			packageProductDependencies = (
+				30241506281644E30030CB80 /* SWXMLHash */,
+			);
+			productName = "Roku Remote";
+			productReference = 30C5A86D27DD4BE900DB308A /* Roku Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30C5A88127DD4BEA00DB308A /* Roku RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C5A89927DD4BEB00DB308A /* Build configuration list for PBXNativeTarget "Roku RemoteTests" */;
+			buildPhases = (
+				30C5A87E27DD4BEA00DB308A /* Sources */,
+				30C5A87F27DD4BEA00DB308A /* Frameworks */,
+				30C5A88027DD4BEA00DB308A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30C5A88427DD4BEA00DB308A /* PBXTargetDependency */,
+			);
+			name = "Roku RemoteTests";
+			productName = "Roku RemoteTests";
+			productReference = 30C5A88227DD4BEA00DB308A /* Roku RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30C5A88B27DD4BEA00DB308A /* Roku RemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C5A89C27DD4BEB00DB308A /* Build configuration list for PBXNativeTarget "Roku RemoteUITests" */;
+			buildPhases = (
+				30C5A88827DD4BEA00DB308A /* Sources */,
+				30C5A88927DD4BEA00DB308A /* Frameworks */,
+				30C5A88A27DD4BEA00DB308A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30C5A88E27DD4BEB00DB308A /* PBXTargetDependency */,
+			);
+			name = "Roku RemoteUITests";
+			productName = "Roku RemoteUITests";
+			productReference = 30C5A88C27DD4BEB00DB308A /* Roku RemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C5A86527DD4BE900DB308A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					30C5A86C27DD4BE900DB308A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					30C5A88127DD4BEA00DB308A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 30C5A86C27DD4BE900DB308A;
+					};
+					30C5A88B27DD4BEA00DB308A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 30C5A86C27DD4BE900DB308A;
+					};
+				};
+			};
+			buildConfigurationList = 30C5A86827DD4BE900DB308A /* Build configuration list for PBXProject "Roku Remote" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30C5A86427DD4BE900DB308A;
+			packageReferences = (
+				30241505281644E20030CB80 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
+			productRefGroup = 30C5A86E27DD4BE900DB308A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C5A86C27DD4BE900DB308A /* Roku Remote */,
+				30C5A88127DD4BEA00DB308A /* Roku RemoteTests */,
+				30C5A88B27DD4BEA00DB308A /* Roku RemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C5A86B27DD4BE900DB308A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C5A87827DD4BEA00DB308A /* Preview Assets.xcassets in Resources */,
+				30C5A8AF27DD993200DB308A /* LaunchScreen.storyboard in Resources */,
+				30C5A96527E0475600DB308A /* data.plist in Resources */,
+				30C5A87527DD4BEA00DB308A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C5A88027DD4BEA00DB308A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C5A88A27DD4BEA00DB308A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C5A86927DD4BE900DB308A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C5A87D27DD4BEA00DB308A /* Roku_Remote.xcdatamodeld in Sources */,
+				302414F02815E4480030CB80 /* DeviceManager.swift in Sources */,
+				30C5A95F27E0475600DB308A /* NetworkCalculator.m in Sources */,
+				30C5A8A927DD8C3200DB308A /* RemoteView.swift in Sources */,
+				30C5A96327E0475600DB308A /* SimplePing.m in Sources */,
+				305B550227E4469500B07162 /* ApiRoutes.swift in Sources */,
+				30241503281609900030CB80 /* DevicesEntity+CoreDataClass.swift in Sources */,
+				30C5A95D27E0475600DB308A /* MMLANScanner.m in Sources */,
+				302414F42815E5540030CB80 /* Device.swift in Sources */,
+				302414F62816009B0030CB80 /* Device+CoreData.swift in Sources */,
+				30C5A8AB27DD8C4800DB308A /* DevicesView.swift in Sources */,
+				30C5A8A727DD8C1F00DB308A /* RokuChannelView.swift in Sources */,
+				30C5A87A27DD4BEA00DB308A /* Persistence.swift in Sources */,
+				30C5A96227E0475600DB308A /* MacFinder.m in Sources */,
+				30C5A87327DD4BE900DB308A /* ContentView.swift in Sources */,
+				30C5A95E27E0475600DB308A /* MACOperation.m in Sources */,
+				30C5A96827E049D200DB308A /* LanScanner.swift in Sources */,
+				30C5A8A527DD8C0000DB308A /* HomeView.swift in Sources */,
+				30241504281609900030CB80 /* DevicesEntity+CoreDataProperties.swift in Sources */,
+				30C5A96027E0475600DB308A /* LANProperties.m in Sources */,
+				30C5A96127E0475600DB308A /* PingOperation.m in Sources */,
+				30C5A87127DD4BE900DB308A /* Roku_RemoteApp.swift in Sources */,
+				30C5A96427E0475600DB308A /* MMDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C5A87E27DD4BEA00DB308A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C5A88727DD4BEA00DB308A /* Roku_RemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C5A88827DD4BEA00DB308A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C5A89127DD4BEB00DB308A /* Roku_RemoteUITests.swift in Sources */,
+				30C5A89327DD4BEB00DB308A /* Roku_RemoteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30C5A88427DD4BEA00DB308A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30C5A86C27DD4BE900DB308A /* Roku Remote */;
+			targetProxy = 30C5A88327DD4BEA00DB308A /* PBXContainerItemProxy */;
+		};
+		30C5A88E27DD4BEB00DB308A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30C5A86C27DD4BE900DB308A /* Roku Remote */;
+			targetProxy = 30C5A88D27DD4BEB00DB308A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30C5A89427DD4BEB00DB308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30C5A89527DD4BEB00DB308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C5A89727DD4BEB00DB308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roku Remote/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Z68E29WDP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Roku-Remote-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = Roku;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.ep.chand.anthony.Roku-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Roku Remote/MMLanScan-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30C5A89827DD4BEB00DB308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roku Remote/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Z68E29WDP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Roku-Remote-Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = Roku;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.ep.chand.anthony.Roku-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Roku Remote/MMLanScan-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30C5A89A27DD4BEB00DB308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z68E29WDP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.ep.chand.anthony.Roku-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roku Remote.app/Roku Remote";
+			};
+			name = Debug;
+		};
+		30C5A89B27DD4BEB00DB308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z68E29WDP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.ep.chand.anthony.Roku-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roku Remote.app/Roku Remote";
+			};
+			name = Release;
+		};
+		30C5A89D27DD4BEB00DB308A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z68E29WDP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.ep.chand.anthony.Roku-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Roku Remote";
+			};
+			name = Debug;
+		};
+		30C5A89E27DD4BEB00DB308A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Z68E29WDP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.jhu.ep.chand.anthony.Roku-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Roku Remote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C5A86827DD4BE900DB308A /* Build configuration list for PBXProject "Roku Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C5A89427DD4BEB00DB308A /* Debug */,
+				30C5A89527DD4BEB00DB308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C5A89627DD4BEB00DB308A /* Build configuration list for PBXNativeTarget "Roku Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C5A89727DD4BEB00DB308A /* Debug */,
+				30C5A89827DD4BEB00DB308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C5A89927DD4BEB00DB308A /* Build configuration list for PBXNativeTarget "Roku RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C5A89A27DD4BEB00DB308A /* Debug */,
+				30C5A89B27DD4BEB00DB308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C5A89C27DD4BEB00DB308A /* Build configuration list for PBXNativeTarget "Roku RemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C5A89D27DD4BEB00DB308A /* Debug */,
+				30C5A89E27DD4BEB00DB308A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30241505281644E20030CB80 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30241506281644E30030CB80 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30241505281644E20030CB80 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		30C5A87B27DD4BEA00DB308A /* Roku_Remote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30C5A87C27DD4BEA00DB308A /* Roku_Remote.xcdatamodel */,
+			);
+			currentVersion = 30C5A87C27DD4BEA00DB308A /* Roku_Remote.xcdatamodel */;
+			path = Roku_Remote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 30C5A86527DD4BE900DB308A /* Project object */;
+}
